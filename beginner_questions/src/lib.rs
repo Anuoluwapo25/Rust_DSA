@@ -39,6 +39,8 @@ pub fn find_max_iter<T: Ord + Copy>(slice: &[T]) -> Option<T> {
 
 
 //3--Print numbers from 1 to n. For multiples of 3, print "Fizz"; for multiples of 5, print "Buzz"; for both, print "FizzBuzz"
+//--match helps to check  if tuple conditions(i % 3, i % 5) will return true or false
+
 
 fn fizzbuzz(n: u32) {
     for i in 1..=n {
@@ -49,4 +51,13 @@ fn fizzbuzz(n: u32) {
             _ => println!("{}", i),
         }
     }
+}
+
+//other method using map and closure which returs Vec
+
+
+//4--Check if a given string is a palindrome (ignoring case and non-alphanumeric characters).
+
+fn is_palindrome(string: &str) -> bool {
+    true
 }
